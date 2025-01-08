@@ -10,6 +10,8 @@ import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 import ExpenseProgress from "@/components/ExpenseProgess";
+import Fab from "@mui/material/Fab";
+import AddIcon from "@mui/icons-material/Add";
 
 const Home = () => {
   const [year, setYear] = useState(dayjs().year());
@@ -31,7 +33,12 @@ const Home = () => {
 
   console.log("monthList", monthList);
   return (
-    <Box>
+    <Box
+      sx={{
+        position: "relative",
+        height: "calc(100vh - 48px)",
+      }}
+    >
       <Typography variant="h4" textAlign={"center"} color="textSecondary">
         Expense Tracker
       </Typography>
@@ -79,6 +86,17 @@ const Home = () => {
             </ListItem>
           ))}
         </List>
+      </Box>
+      <Box
+        sx={{
+          position: "absolute",
+          bottom: 0,
+          right: 0,
+        }}
+      >
+        <Fab color="primary" aria-label="add">
+          <AddIcon />
+        </Fab>
       </Box>
     </Box>
   );

@@ -19,8 +19,25 @@ const ExpenseProgress = () => {
 
   return (
     <Box sx={{ padding: "30px 0" }}>
-      <Typography variant="h6">₹{balance}/-</Typography>
+      <Typography variant="h6" sx={{ marginBottom: "6px" }}>
+        ₹ {balance} /-
+      </Typography>
       <LinearProgress value={calculatePercentage()} variant="determinate" />
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          marginTop: "6px",
+        }}
+      >
+        <Typography color="textSecondary" variant="body1">
+          Expenses: ₹ {expenses} /-
+        </Typography>
+        <Typography color="textSecondary" variant="body1">
+          Remaining: ₹ {balance - expenses} /-
+        </Typography>
+      </Box>
     </Box>
   );
 };
