@@ -1,0 +1,22 @@
+{
+  "name": "Expense Tracker",
+  "short_name": "expense-tracker",
+  "start_url": "/",
+  "id": "expenseTracker",
+  "display": "standalone",
+  "description": "Track your expense",
+  "icons": [
+    {
+      "purpose": "maskable",
+      "sizes": "512x512",
+      "src": "notepad.png",
+      "type": "image/png"
+    },
+    {
+      "purpose": "any",
+      "sizes": "512x512",
+      "src": "notepad.png",
+      "type": "image/png"
+    }
+  ]
+}
