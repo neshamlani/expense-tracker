@@ -1,14 +1,50 @@
-export const months = {
-  "0": "January",
-  "1": "February",
-  "2": "March",
-  "3": "April",
-  "4": "May",
-  "5": "June",
-  "6": "July",
-  "7": "August",
-  "8": "September",
-  "9": "October",
-  "10": "November",
-  "11": "December"
-}
+export const months = [
+  {
+    name: "January",
+    id: 0,
+  },
+  {
+    name: "February",
+    id: 1,
+  },
+  {
+    name: "March",
+    id: 2,
+  },
+  {
+    name: "April",
+    id: 3,
+  },
+  {
+    name: "May",
+    id: 4,
+  },
+  {
+    name: "June",
+    id: 5,
+  },
+  {
+    name: "July",
+    id: 6,
+  },
+  {
+    name: "August",
+    id: 7,
+  },
+  {
+    name: "September",
+    id: 8,
+  },
+  {
+    name: "October",
+    id: 9,
+  },
+  {
+    name: "November",
+    id: 10,
+  },
+  {
+    name: "December",
+    id: 11,
+  },
+];

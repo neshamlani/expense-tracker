@@ -20,7 +20,7 @@ const ExpenseProgress = () => {
   return (
     <Box sx={{ padding: "30px 0" }}>
       <Typography variant="h6" sx={{ marginBottom: "6px" }}>
-        ₹ {balance} /-
+        ₹ {balance.toLocaleString()} /-
       </Typography>
       <LinearProgress value={calculatePercentage()} variant="determinate" />
       <Box
@@ -32,10 +32,10 @@ const ExpenseProgress = () => {
         }}
       >
         <Typography color="textSecondary" variant="body1">
-          Expenses: ₹ {expenses} /-
+          Expenses: ₹ {expenses.toLocaleString()} /-
         </Typography>
         <Typography color="textSecondary" variant="body1">
-          Remaining: ₹ {balance - expenses} /-
+          Remaining: ₹ {(balance - expenses).toLocaleString()} /-
         </Typography>
       </Box>
     </Box>
