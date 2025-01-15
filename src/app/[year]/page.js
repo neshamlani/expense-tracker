@@ -29,7 +29,7 @@ const MonthView = () => {
         flexDirection: "column",
       }}
     >
-      <Box sx={{ display: "flex", alignItems: "center" }}>
+      <Box sx={{ display: "flex", alignItems: "center", marginBottom: "24px" }}>
         <IconButton
           size="large"
           sx={{ padding: 0, marginRight: "24px" }}
